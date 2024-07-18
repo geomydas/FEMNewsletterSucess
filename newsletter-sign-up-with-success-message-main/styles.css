@@ -167,6 +167,7 @@ body {
   color: black;
 }
 .newsletter_form-submit {
+  cursor: pointer;
   width: 100%;
   padding: 0.75rem 0;
   border: 0;
@@ -239,6 +240,7 @@ body {
   -o-transition: 0.5s background-size, 2s box-shadow;
   transition: 0.5s background-size, 2s box-shadow;
   transition: 0.5s background-size, 2s box-shadow, 2s -webkit-box-shadow;
+  cursor: pointer;
 }
 .success_button:hover {
   background-image: -webkit-gradient(
