@@ -202,8 +202,10 @@ body {
   color: var(--White);
   font-weight: 700;
   background-color: var(--Dark-Slate-Grey);
+  background-image: linear-gradient(90deg, #fe5179, var(--Tomato));
+  background-repeat: no-repeat;
   background-size: 0;
-  transition: 0.5s background-size, 2s -webkit-box-shadow;
+  transition: 0.75s;
   cursor: pointer;
 }
 .success_button:hover {
