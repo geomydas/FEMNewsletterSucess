@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A collaboration with Frost and Geomydas on frontendmentor">
+    <meta name="author" content="Frost and Geomydas">
+    <meta name="keywords" content="HTML, CSS, JS, Hypertext Markup Language, Cascading Stylesheets, Javascript, frontendmentor, frontendmentor solution,
+    newsletter sign up form with success message, collab, pair programming, geomydas, frost,
+    github, frontendmentor challenge">
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="newsletter">
+      <div class="newsletter_text">
+        <h2 class="newsletter_header">Stay updated!</h2>
+        <p class="newsletter_paragraph">
+          Join 60,000+ product managers receiving monthly updzates on:
+        </p>
+        <ul class="newsletter_list">
+          <li class="newsletter_listItem">
+            Product discovery and building what matters
+          </li>
+          <li class="newsletter_listItem">
+            Measuring to ensure updates are a success
+          </li>
+          <li class="newsletter_listItem">And much more!</li>
+        </ul>
+        <form action="" method="post" class="newsletter_form">
+          <label for="email" class="newsletter_form-label">Email address</label
+          ><input
+            type="email"
+            id="email"
+            name="email"
+            class="newsletter_form-email"
+            placeholder="email@company.com"
+            required
+          /><button type="submit" class="newsletter_form-submit">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </div>
+      <picture>
+        <source
+          srcset="images/illustration-sign-up-mobile.svg"
+          media="(max-width: 47rem)"
+          alt=""
+        />
+        <img
+          src="images/illustration-sign-up-desktop.svg"
+          alt=""
+          class="newsletter_img"
+        />
+      </picture>
+    </main>
+    <section class="success">
+      <img src="images/icon-success.svg" alt="" class="success_image" />
+      <h2 class="success_header">Thanks for subscribing!</h2>
+      <p class="success_paragraph">
+        A confirmation email has been sent to
+        <strong class="success_emphasizetext">ash@loremcompany.com. </strong
+        >Please open it and click the button inside to confirm your
+        subscription.
+      </p>
+      <button class="success_button">Dismiss message</button>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
