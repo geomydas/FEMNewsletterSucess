@@ -35,6 +35,7 @@
   const togglePage = (newsLetterState,successPageState) => {
     userEmailText.textContent = `${(newsLetterState === "remove") ? `${emailInput.value} ` : ""}`
     emailInput.value = "";
+
     document .getElementById("newsletter-element")
       .classList[newsLetterState]("newsletter--active");
     document
@@ -43,6 +44,7 @@
   };
 
   const showInvalidEmailMesage = () => {
+    emailInput.focus();
     emailInput.classList.add("newsletter_form-email--error");
     document
       .getElementById("error-message")
@@ -57,7 +59,8 @@
   };
 
   const isEmailValid = () => {
-    if (emailInput.checkValidity()) {
+    const emailRegexValidation = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+    if (emailRegexValidation.test(emailInput.value.toLowerCase())) {
       return true;
     } else {
       return false;
@@ -69,6 +72,8 @@
     if (isEmailValid()) {
       togglePage("remove","add");
       hideInvalidMessage();
+
+      document.getElementById("dismiss-message-button").focus();
     } else {
       showInvalidEmailMesage();
     }
@@ -76,6 +81,8 @@
 
   const refreshForm = () => {  
     togglePage("add","remove");
+
+    emailInput.focus();
   }
 
   emailInput.addEventListener("input", () => {
